@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>React Interview Set 4</h1>
+
+    <h2>1. What is UseRef Hook ?(Implementation)</h2>
+    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=>The useRef Hook allows you to persist values between renders.It can be used to store a mutable value that does not cause a re-render when updated.It can be used to access a DOM element directly. </pre><br>
+
+    <h2>2. What is Context api </h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> The Context API is a React structure that enables you to exchange unique details and assists in solving prop-drilling from all levels of your application. (or) Context provides a way to pass data through the component tree without having to pass props down manually at every level.</p><br>
+
+    <h2>3. Difference between callback and useCallback Hook ?</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> callback is like an argument passed to an function whereas another one is hook, in this you pass another function as an argument.</p><br>
+
+    <h2>4. What is Props Drilling Concept ?What is State Uplifting ?</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=>It is the process by which you pass data from one component of the React Component tree to another by going through other components that do not need the data but only help in passing it around and when several components need to share the same changing data then it is recommended to lift the shared state up to their closest common ancestor. That means if two child components share the same data from its parent, then move the state to parent instead of maintaining local state in both of the child components. </p><br>
+
+    <h2>5. Difference between useEffect and useContext ?</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> It allows us to implement all of the lifecycle hooks from within a single function API. // this will run when the component mounts and anytime the stateful data changes.</p><br>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> This hook allows us to work with React's Context API, which itself a mechanism to allow us to share data within it's component tree without passing through props. It basically removes prop-drilling cons</p><br>
+
+    <h2>6. What are React Life cycles Explain each one with Example</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=>Each component in React has a lifecycle that goes through three main phases Mounting, Updating, and Unmounting. The react lifecycle method is used in the React class component. It helps us in creating our state and mutating them </p><br>
+    
+</body>
+</html>
