@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>React Interview Set 3</h1>
 
-    <h2>1. </h2>
-    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> </p><br>
+    <h2>1. Difference between Axios and fetch </h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=>Axios has url in request object. Fetch
+        has no url in request object. Axios is a stand-alone third party package that can be easily installed. Fetch is
+        built into most modern browsers; no installation is required as such. </p><br>
 
-    <h2>2. </h2>
-    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> </p><br>
+    <h2>2. What is UseState Hook ?(Implementation)</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=> useState is a Hook that allows you to
+        have state variables in functional components. You pass the initial state to this function and it returns a
+        variable with the current state value (not necessarily the initial state) and another function to update this
+        value.
+    <div><a href="https://nrx-react-ass-implementation.netlify.app" target="_blank">Click Here For Implementation</a></div>
+    </p><br>
 
-    <h2>3. </h2>
-    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >
+    <h2>3. What is useEffect Hook ?(Implementation)</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=>
+        <li>The useEffect Hook allows you to perform side effects in your components. </li>
+        <li>Some examples of side effects are: fetching data, directly updating the DOM, and timers.</li>
+        <li> useEffect accepts two arguments. useEffect(function, dependency )</li><br>
+    <div><a href="https://nrx-react-ass-implementation.netlify.app" target="_blank">Click Here For Implementation</a></div>
+    </p><br>
 
-    </pre><br>
+    <h2>4. What is UseReducer Hook ?(Implementation)</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=>
+        <li> The useReducer Hook is the better alternative to the useState hook and is generally more preferred over the
+            useState hook when you have complex state-building logic or when the next state value depends upon its
+            previous value or when the components are needed to be optimized. </li>
+        <li>The useReducer hook takes three arguments including reducer, initial state, and the function to load the
+            initial state lazily.</li><br>
+    <div><a href="https://nrx-react-ass-implementation.netlify.app" target="_blank">Click Here For Implementation</a></div>
+    </p><br>
 
-    <h2>4. </h2>
-    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> </p><br>
+    <h2>5. What is UseMemo Hook ?(Implementation)</h2>
+    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=>The useMemo Hook can be used to keep
+        expensive, resource intensive functions from needlessly running. In this example, we have an expensive function
+        that runs on every render. When changing the count or adding a todo, you will notice a delay in execution.
+    <div><a href="https://nrx-react-ass-implementation.netlify.app" target="_blank">Click Here For Implementation</a></div>
+    </p><br>
 
-    <h2>5. </h2>
-    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> </p><br>
 
-    <h2>6. </h2>
-    <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" >=> </p><br>
-    
 </body>
+
 </html>
