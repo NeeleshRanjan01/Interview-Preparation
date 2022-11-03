@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Node.JS Interview Set 1</h1>
+
+    <h2>1. How do you create a simple Express.js application?</h2>
+    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=> 
+        const express = require("express");
+    </pre>
+    <h2>2. Implementation of all type of exports in backend application</h2>
+    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=> 
+        function defaulted(req,res){
+            res.send("default export")
+         }
+         
+         function named(req,res){
+             res.send("named export")
+         }
+         
+         module.exports = defaulted;
+         module.exports = {named};
+    </pre>
+    <h2>3. Create a middleware which will be applicable to all the routes.</h2>
+    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;"> => 
+        const middlewareOne = (req,res,next) => {
+            console.log(" middlewareOne");
+            next();
+        }
+        
+        const middlewareTwo = (req,res,next) => {
+            console.log("middlewareTwo");
+            next();
+        }
+        
+        app.use(middlewareOne)
+        
+        app.get('/Home',(req,res) => {
+            res.send("hello world One")
+        })
+        
+        app.get('/about', middlewareTwo , (req,res) => {
+            res.send("Hello World Two")
+        })
+        
+        
+        app.listen('8080',() => {
+            console.log("Working");
+        })
+    </pre>
+    <h2>4. Implement CORS.</h2>
+    <pre style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">=>
+        const cors = require('cors');
+        const app = express();
+        app.use(cors())
+        app.get('/', (req, res) => {
+            res.send("Hello");
+        })
+
+     </pre>
+
+</body>
+
+</html>
